@@ -23,8 +23,6 @@ public class DomainCount {
         	
         	String[] words = values[1].split("\\.");
         	
-        	System.out.println(values[1] + " : "  + words.length);
-        	
         	String subdomain = "";
         	
         	for(int i = words.length - 1; i >= 0 ; i--) {
