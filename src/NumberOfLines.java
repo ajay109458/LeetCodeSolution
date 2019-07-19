@@ -20,7 +20,6 @@ public class NumberOfLines {
 			
 			lineLength = lineLength + widths[ch-'a'];
 			
-			System.out.println(lineLength);
 		}
 
 		if (lineLength > 0) {
