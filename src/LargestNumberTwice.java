@@ -26,8 +26,14 @@ public class LargestNumberTwice {
         	}
         }
         
-        if (largestIndex != -1 && secondLargestIndex != -1 && nums[largestIndex] >= 2 * nums[secondLargestIndex])
-        	return largestIndex;
+        if (largestIndex != -1) {
+        	
+        	if (secondLargestIndex == -1)
+        		return 0;
+        	else if (nums[largestIndex] >= nums[secondLargestIndex] * 2 )
+        		return largestIndex;
+        	
+        }
         
         
         return -1;
